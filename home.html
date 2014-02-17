@@ -10,7 +10,7 @@
 
      <meta charset="UTF-8" />
 
-     <link rel="stylesheet" type="text/css" href="css/master.css">
+     <link rel="stylesheet" type="text/css" href="css/jstyle.css">
 
      <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css" />
 
@@ -30,27 +30,32 @@
       
     </script>
 
-
+ 
 </head>
 
 <body>
 
-<div class="header">
-  <header id="header">
-    <a href="home.html">Home</a>
-    <a href="blog.html">Blog</a>
-    <a href="projects.html" class="current"> Projects </a>
-    <a href="music.html"> Music </a> 
-    <a href="resume.html"> Resume </a>
-    <a href="about.html"> About</a>
-  </header>
-</div>
+<div id='navbar'>
+    <ul>
+      <li class='active'><a href='home.html'><span>Home</span></a></li>
+      <li><a href='blog.html'><span>Blog</span></a></li>
+      <li><a href="projects.html"><span>Projects</span></a></li>
+      <li><a href="music.html"> <span>Music</span> </a></li>
+      <li><a href="resume.html"> <span>Resume</span> </a></li>
+      <li class='last'><a href='about.html'><span>About</span></a></li>
+    </ul>
+  </div>
+
+<div class="push"></div>
+ 
 
 <script src="app.js"></script>
 
     <div id="container">
 
+
      <div id="content">
+       <div class="push"></div>
 	   <h1> <span> Jay Bamimore </span> </h1>
 
        
@@ -58,10 +63,10 @@
 
      		<ul>
      		<li><a href="blog.html"> Blog </a></li>
-               <li><a href="projects.html"> Projects </a></li>
+        <li><a href="projects.html"> Projects </a></li>
      		<li><a href="music.html"> Music </a></li>
-               <li><a href="resume.html"> Resume </a></li>
-               <li><a href="about.html" style="background-image: none" > About </a></li>
+        <li><a href="resume.html"> Resume </a></li>
+        <li><a href="about.html" style="background-image: none" > About </a></li>
      		
      	    </ul>
 

@@ -7,7 +7,7 @@
 p {
 	color:white;
 	font-size: 16px;
-	font-family:'texfont', 'Ubuntu';
+	font-family:'Ubuntu Light';
 	padding-top: 0.8cm;
   width:100%;
   overflow:hidden;
@@ -118,11 +118,61 @@ body.wider #content{
   min-height: 100%;
   height: auto !important;
   width: 80%;
-  background-color: transparent;
+  background: none repeat scroll 0% 0% rgb(37, 37, 37);
   margin-left: auto;
   margin-right: auto;
   position: relative;
   text-align: left;
+}
+body.thin h1{ font-size: 40px; padding-top: 2px;}
+
+body.thin ul { 
+  width: 300px;
+  height: 40px;
+
+}
+
+body.thin li{
+  float: none;
+}
+
+#content ul a {
+  background-image: url('img/obsidian.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  line-height: 80px;
+  padding-right: 32px;
+  padding-left: 32px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Ubuntu';
+  font-size: 21px;
+  color: black;
+}
+
+#content ul li {float: left;}
+
+#content body.thin ul a{
+  background-image: url('img/obsidianh.png');
+  background-position: bottom;
+  background-repeat: repeat-x;
+  font-size: 21px;
+}
+
+#content ul {
+  list-style-type: none;
+  width: 663px;
+  height: 80px;
+  margin: auto;
+  /*background-image: url('img/bg.png');*/
+}
+
+body.wider #content{
+  min-height: 100%;
+  height: auto !important;
+  width: 100%;
+  display: block;
+  position: relative;
 }
 
  #footer {
@@ -146,92 +196,124 @@ body.wider #content{
   border-color: transparent;
 }
 
-
-.header {
-  width:100%;
-  height:30px;
+/* New Header shizz */
+#navbar{
+  background-color: rgba(1, 1, 1, 0.9);
+  text-align: center;
+  top: 0;
   margin:0 auto;
-  position:fixed !important;
-  position: absolute; /*ie6 and above*/
-  top:0;
   left:0;
   right:0;
-  font-family: 'texfont', 'Ubuntu';
-  padding-right: 5px;
-  /* Adds shadow to the bottom of the bar */
-  -webkit-box-shadow: 0px 0px 15px 0px #000000;
-  -moz-box-shadow: 0px 0px 8px 0px #000000;
-  box-shadow: 0px 0px 16px 0px #000000;
-  /* Adds the transparent background */
-  background-color: rgba(1, 1, 1, 0.9);
-  color: rgba(1, 1, 1, 0.8);
+  position:fixed !important;
   z-index: 10;
-
 }
-
-body.thin .header{
-  width: 100%;
-  height: 30px;
-  margin: 0 auto;
-  position: fixed !important;
-  font-family: 'texfont', 'Ubuntu';
-  -webkit-box-shadow: 0px 0px 15px 0px #000000;
-  -moz-box-shadow: 0px 0px 8px 0px #000000;
-  box-shadow: 0px 0px 16px 0px #000000;
-  /* Adds the transparent background */
-  background-color: rgba(1, 1, 1, 0.9);
-  color: rgba(1, 1, 1, 0.8);
-  z-index: 10;
-
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  display: inline-table;
+  
+ 
 }
-
-#header {
-position: fixed;
-top: 0;
-width: 100%;
-color: #ffffff;
-height: 30px;
-text-align: center;
-padding-top: 5px;
+#navbar ul:after {
+  content: ' ';
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
-
-body.thin #header{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  color: #ffffff;
-  height: 30px;
+#navbar ul li {
+  float: left;
+  display: inline;
+  padding: 0;
   text-align: center;
-  padding-top: 5px;
 }
-
-#header a {
-font-size: 16px;
-padding-left: 10px;
-padding-right: 10px;
-padding-top: 5px;
-padding-bottom: 5px;
-color: white;
-text-decoration: none;
-}
-
-body.thin #header a{
-  font-size: 16px;
-
-}
-
-
-#header a:hover, a:active {
-color: white;
-text-decoration: none;
-} 
-
-#header a.current {
+#navbar ul li a {
+  color: #ffffff;
   text-decoration: none;
-  padding-top: 2px;
-  color: lightblue;
-  background-color: transparent;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Ubuntu', 'texfont';
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
 }
+#navbar ul li a:hover {
+  color: lightblue;
+}
+#navbar ul li a:hover:before {
+  width: 100%;
+}
+#navbar ul li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+#navbar ul li a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: lightblue;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#navbar ul li.last > a:after,
+#navbar ul li:last-child > a:after {
+  display: none;
+}
+#navbar ul li.active a {
+  color: lightblue;
+}
+#navbar ul li.active a:before {
+  width: 100%;
+}
+@media screen and (max-width: 366px) {
+  #navbar ul li {
+    float: none;
+  }
+  #navbar ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #navbar ul li a:after {
+    display: none;
+  }
+  #navbar ul li a:before {
+    height: 1px;
+    background: #ffffff;
+    width: 100%;
+    opacity: .2;
+  }
+  #navbar ul li.last > a:before,
+  #navbar ul li:last-child > a:before {
+    display: none;
+  }
+}
+/***************/
 
 #footer p {
   font-size: 15px;
@@ -278,7 +360,7 @@ text-decoration: none;
    min-height: 100%;
   height: auto !important;
   width: 80%;
-  background-color: transparent;
+  background: none repeat scroll 0% 0% rgb(37, 37, 37);
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -293,6 +375,7 @@ text-decoration: none;
     margin: 0px 10px 10px 0px;
     padding: 15px;
     border: medium none;
+    border-bottom: thick;
 }
 
 .individual_audio {
@@ -305,7 +388,8 @@ text-decoration: none;
 
 #individualPost h1 {
     font-weight: 200;
-    font-size: 22px;
+    font-style: bold;
+    font-size: 28px;
     font-family: 'texfont', 'Ubuntu';
     margin: 0px 0px 20px;
     float: left;
@@ -337,47 +421,37 @@ text-decoration: none;
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 
-  .header{
-  width: 100%;
-  height: 100px;
-  margin: 0 auto;
-  position: fixed !important;
-  font-family: 'texfont', 'Ubuntu';
-  -webkit-box-shadow: 0px 0px 25px 0px #000000;
-  -moz-box-shadow: 0px 0px 14px 0px #000000;
-  box-shadow: 0px 0px 26px 0px #000000;
-  /* Adds the transparent background */
-  background-color: rgba(1, 1, 1, 0.9);
-  color: rgba(1, 1, 1, 0.8);
-  z-index: 10;
-}
-
-#header{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  color: #ffffff;
-  height: 50px;
-  text-align: center;
-  padding-top: 5px;
-}
-
-#header a{
-  font-size: 36px;
-  display: inline-block;
-  float: left;
-  padding-right: 0.6cm;
-  padding-left: 0.8cm;
+ ul a {
+  background-image: url('img/obsidianh.png');
+  background-position: bottom;
+  background-repeat: repeat-x;
+  font-size: 90px;
+  font-family: 'Ubuntu';
+  display: block;
   padding-top: 1cm;
+  padding-bottom: 1cm;
+}
+
+li{float: none;}
+
+#container{width:100%;}
+
+#content{
+width:100%;
+line-height: 100px;
+}
+
+#content ul { 
+  width: 700px;
+  height: 80px;
 
 }
 
-#header a.current {
-  text-decoration: none;
-  padding-top: 1cm;
-  color: lightblue;
-  background-color: transparent;
+.push {
+  height:80px;
 }
+
+h1{ font-size: 100px; padding-top: 2px; text-align: center; font-family: 'Ubuntu';}
 
 p {
   color:white;
@@ -411,4 +485,16 @@ position: absolute;
   margin-bottom: 182px;
 } 
 
+}
+
+
+/* Thin Layout */
+
+body.thin #container{
+width:100%;
+}
+
+body.thin #content{
+width:100%;
+line-height: 40px;
 }
