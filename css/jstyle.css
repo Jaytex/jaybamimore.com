@@ -375,7 +375,7 @@ body.wider #content{
     margin: 0px 10px 10px 0px;
     padding: 15px;
     border: medium none;
-    border-bottom: thick;
+    border-bottom: outset;
 }
 
 .individual_audio {
