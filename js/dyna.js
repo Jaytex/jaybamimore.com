@@ -11,8 +11,10 @@ function getBrowserWidth(){
 function dynamicLayout(){
 	var browserWidth = getBrowserWidth();
 
-
-	if (browserWidth < 800){
+	if (browserWidth < 366) {
+		changeLayout("slim")
+	}
+	if (browserWidth < 700){
 		changeLayout("thin");
 	}
 
