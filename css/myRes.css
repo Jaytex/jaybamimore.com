@@ -20,14 +20,14 @@ li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; font-family: 'Ubunt
 .enumerate3 {list-style-type:lower-roman;}
 .enumerate4 {list-style-type:upper-alpha;}
 div.newtheorem { margin-bottom: 2em; margin-top: 2em;}
-.obeylines-h,.obeylines-v {white-space: nowrap; }
+.obeylines-h,.obeylines-v {black-space: nowrap; }
 div.obeylines-v p { margin-top:0; margin-bottom:0; font-family: 'Ubuntu', 'texfont'; }
 .overline{ text-decoration:overline; }
 .overline img{ border-top: 1px solid black; }
-td.displaylines {text-align:center; white-space:nowrap;}
+td.displaylines {text-align:center; black-space:nowrap;}
 .centerline {text-align:center;}
 .rightline {text-align:right;}
-div.verbatim {font-family: monospace; white-space: nowrap; text-align:left; clear:both; }
+div.verbatim {font-family: monospace; black-space: nowrap; text-align:left; clear:both; }
 .fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
 div.fbox {display:table}
 div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
@@ -76,7 +76,7 @@ table.equation {width:100%;}
 .equation td{text-align:center; }
 td.equation { margin-top:1em; margin-bottom:1em; } 
 td.equation-label { width:5%; text-align:center; }
-td.eqnarray4 { width:5%; white-space: normal; }
+td.eqnarray4 { width:5%; black-space: normal; }
 td.eqnarray2 { width:5%; }
 table.eqnarray-star, table.eqnarray {width:100%;}
 div.eqnarray{text-align:center;}
@@ -91,20 +91,20 @@ img.cdots{vertical-align:middle;}
 .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
 .index-item, .index-subitem, .index-subsubitem {display:block}
 div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}
-div.caption span.id{font-weight: bold; white-space: nowrap; }
+div.caption span.id{font-weight: bold; black-space: nowrap; }
 h1.partHead{text-align: center}
 p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; font-family: 'Ubuntu', 'texfont'; }
 p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; font-family: 'Ubuntu', 'texfont'; }
 .paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}
 .subparagraphHead, .likesubparagraphHead { font-weight: bold;}
 .quote {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; margin-right:1em; text-align:justify;}
-.verse{white-space:nowrap; margin-left:2em}
+.verse{black-space:nowrap; margin-left:2em}
 div.maketitle {text-align:center;}
 h2.titleHead{text-align:center;}
 div.maketitle{ margin-bottom: 2em; }
 div.author, div.date {text-align:center;}
 div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }
-div.author{white-space: nowrap;}
+div.author{black-space: nowrap;}
 .quotation {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; }
 .abstract p {margin-left:5%; margin-right:5%; font-family: 'Ubuntu', 'texfont'; }
 div.abstract {width:100%;}
@@ -152,6 +152,84 @@ display: block;
 position: relative;
 }
 
+#music-chart{
+   min-height: 100%;
+  height: auto !important;
+  width: 80%;
+  background-color: gainsboro;
+  border-left: outset;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: left;
+  padding-left: 5px;
+}
+
+h1 {
+  text-align:center;
+  color: black;
+  font-size: 72px;
+  font-family:'Ubuntu';
+  padding-top: 10px;
+}
+
+body.thin h1{ font-size: 40px; padding-top: 2px;}
+
+h2 {
+  color: black;
+  font-size: 18px;
+  font-family: 'texfont';
+  float: left;
+  text-decoration: none;
+}
+
+
+
+#individualPost {
+    background: none repeat scroll 0% 0% rgb(37, 37, 37);
+    margin: 0px 10px 10px 0px;
+    padding: 15px;
+    border: medium none;
+    border-bottom: outset;
+}
+
+.individual_audio {
+    border-top: 14px solid rgb(115, 165, 56);
+}
+
+.individual_blog {
+  border-top: 14px solid #4275ca
+}
+
+#individualPost h1 {
+    font-weight: 200;
+    font-style: bold;
+    font-size: 28px;
+    font-family: 'texfont', 'Ubuntu';
+    margin: 0px 0px 20px;
+    float: left;
+    width: 80%;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+}
+
+#individualPost h1 a{
+  color: black;
+}
+
+#individualPost p{
+  text-align: left;
+}
+
+
+.clearme {
+    height: 1px;
+    font-size: 0.001em;
+    text-indent: -9999px;
+    clear: both;
+}
+
 body.wider #content{
   min-height: 100%;
   height: auto !important;
@@ -179,14 +257,13 @@ body.wider #content{
 }
 
  #footer {
-height:60px;
-background-color: rgb(54, 54, 54);
-border-top: dashed;
-bottom: 0;
-right: 0;
-left: 0;
-position: absolute;  
-z-index: 10;
+  width: 100%;
+  height:90px;
+  background-color: rgb(54, 54, 54);
+  border-top: dashed;
+  bottom: 0;
+  position: absolute;  
+  z-index: 10;
 }
 
 #stratus  {
@@ -206,6 +283,7 @@ z-index: 10;
   left:0;
   right:0;
   position:fixed !important;
+  z-index: 10;
 }
 #navbar ul {
   list-style: none;
@@ -321,7 +399,7 @@ z-index: 10;
   color: white;
   text-decoration: none;
   text-align: left;
-  padding-top: 5px;
+  padding-top: 20px;
 }
 
 #footer a{
@@ -376,35 +454,10 @@ and (max-device-width : 480px) {
   z-index: 10;
 }
 
-#header{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  color: #ffffff;
-  height: 50px;
-  text-align: center;
-  padding-top: 5px;
-}
 
-#header a{
-  font-size: 36px;
-  display: inline-block;
-  float: left;
-  padding-right: 0.6cm;
-  padding-left: 0.8cm;
-  padding-top: 1cm;
-
-}
-
-#header a.current {
-  text-decoration: none;
-  padding-top: 1cm;
-  color: lightblue;
-  background-color: transparent;
-}
 
 p {
-  color:white;
+  color:black;
   font-size: 32px;
   font-family:'texfont', 'Ubuntu';
   padding-top: 5cm;
@@ -425,7 +478,7 @@ position: absolute;
 
 #footer p {
   font-size: 45px;
-  color: white;
+  color: black;
   text-decoration: none;
   text-align: left;
   padding-top: 5px;

@@ -48,6 +48,12 @@ a{
   background-color: transparent;
   outline: none;
 }
+#content a:link, a:visited{
+  color: grey;
+}
+#content a:link, a:hover{
+  text-decoration: none;
+}
 
 #music-chart a {
 	background-color:transparent;
@@ -196,6 +202,25 @@ body.wider #content{
   border-color: transparent;
 }
 
+h1 {
+  text-align:center;
+  color: black;
+  font-size: 72px;
+  font-family:'Ubuntu';
+  padding-top: 10px;
+}
+
+body.thin h1{ font-size: 40px; padding-top: 2px;}
+
+h2 {
+  color: black;
+  font-size: 18px;
+  font-family: 'texfont';
+  float: left;
+  text-decoration: none;
+}
+
+
 /* New Header shizz */
 #navbar{
   background-color: rgba(1, 1, 1, 0.9);
@@ -320,7 +345,7 @@ body.wider #content{
   color: white;
   text-decoration: none;
   text-align: left;
-  padding-top: 5px;
+  padding-top: 20px;
 }
 
 #footer a{
