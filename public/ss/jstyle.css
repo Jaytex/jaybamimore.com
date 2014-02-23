@@ -1,0 +1,686 @@
+/* Author : Jay Bamimore
+   ...
+   ...
+   ...
+   */
+
+p {
+	color:white;
+	font-size: 16px;
+	font-family:'Ubuntu Light';
+	padding-top: 0.8cm;
+  width:100%;
+  overflow:hidden;
+}
+
+.jtext1 {
+  font-family: 'texfont', 'Ubuntu' ; 
+  color:black;
+}
+
+.jtext2 {
+  font-family: 'texfont', 'Ubuntu' ; 
+  color:white;
+}
+
+
+body {
+	background: gainsboro;
+  text-align: center;
+}
+
+body.wider {
+  background: gainsboro;
+  text-align: center;
+  height: 100%;
+}
+
+html {
+  background:gainsboro;
+  position: relative;
+  min-height: 100%;
+}
+
+ body {
+  margin: 0 0 100px;
+}
+
+a{
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+#content a:link, a:visited{
+  color: white;
+  text-decoration: none;
+}
+#content a:hover{
+  color: grey;
+  text-decoration: blink;
+}
+
+#music-chart a {
+	background-color:transparent;
+  color: white;
+  outline: none;
+  text-decoration: none;
+  float: none;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 1cm;
+  padding-top: 1cm;
+  font-family: 'texfont', 'Ubuntu';
+  text-align: left;
+}
+
+#music-chart ul{
+  list-style: none;
+}
+
+#music-chart ul a{
+  text-decoration: none;
+  text-align: left;
+  display: block;
+  color: black;
+  border: dashed;
+  border-color: ghostwhite;
+  border-radius: 5px;
+}
+
+#music-chart li{
+  text-align: left;
+}
+
+@font-face{
+  font-family: "texfont";
+  src: url('http://www.fontsforweb.com/public/fonts/423/SansationLight.eot');
+  src: local("Sansation Light"), url('http://www.fontsforweb.com/public/fonts/423/SansationLight.woff') format("woff"), url('http://www.fontsforweb.com/public/fonts/423/SansationLight.ttf') format("truetype");
+}
+
+#container{
+  width:100%;
+  margin:0 auto;
+}
+
+#content {
+min-height: 100%;
+height: auto !important;
+width:100%;
+display: block;
+position: relative;
+}
+
+body.wider #content{
+  min-height: 100%;
+  height: auto !important;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+#content.blog iframe{
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  display: table;
+}
+
+#content .blog{
+  min-height: 100%;
+  height: auto !important;
+  width: 80%;
+  background: none repeat scroll 0% 0% rgb(37, 37, 37);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: left;
+}
+body.thin h1{ font-size: 40px; padding-top: 2px;}
+
+body.thin ul { 
+  width: 300px;
+  height: 40px;
+
+}
+
+body.thin ul li{
+  float: none;
+}
+
+#content ul a {
+  background-image: url('/img/obsidian.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  line-height: 80px;
+  padding-right: 32px;
+  padding-left: 32px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Ubuntu';
+  font-size: 21px;
+  color: black;
+}
+
+#content ul li {float: left;}
+
+#content body.thin ul a{
+  background-image: url('/img/obsidianh.png');
+  background-position: bottom;
+  background-repeat: repeat-x;
+  font-size: 21px;
+  float: none;
+}
+
+#content ul {
+  list-style-type: none;
+  width: 663px;
+  height: 80px;
+  margin: auto;
+  /*background-image: url('img/bg.png');*/
+}
+
+body.wider #content{
+  min-height: 100%;
+  height: auto !important;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+ #footer {
+  width: 100%;
+  height:90px;
+  background: rgb(37, 37, 37);
+  border-top: dashed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;  
+  z-index: 10;
+}
+
+#stratus  {
+  margin-bottom: 0px;
+  bottom: 0;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 11px;
+  font-family: 'texfont','Ubuntu','Arial';
+  border-color: transparent;
+}
+
+h1 {
+  text-align:center;
+  color: black;
+  font-size: 72px;
+  font-family:'Ubuntu';
+  padding-top: 10px;
+}
+
+body.thin h1{ font-size: 40px; padding-top: 2px;}
+
+h2 {
+  color: black;
+  font-size: 18px;
+  font-family: 'texfont';
+  float: left;
+  text-decoration: none;
+}
+
+
+/* New Header shizz */
+#navbar{
+  background: rgb(37, 37, 37);
+  text-align: center;
+  top: 0;
+  margin:0 auto;
+  left:0;
+  right:0;
+  position:fixed !important;
+  z-index: 10;
+}
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  display: inline-table;
+}
+#navbar ul:after {
+  content: ' ';
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#navbar ul li {
+  float: left;
+  display: inline;
+  padding: 0;
+  text-align: center;
+}
+#navbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 25px;
+  font-family: 'Ubuntu', 'texfont';
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#navbar ul li a:hover {
+  color: lightblue;
+}
+#navbar ul li a:hover:before {
+  width: 100%;
+}
+#navbar ul li a:after {
+  content: '';
+  display: inline;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+#navbar ul li a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: lightblue;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#navbar ul li.last > a:after,
+#navbar ul li:last-child > a:after {
+  display: none;
+}
+#navbar ul li.active a {
+  color: lightblue;
+}
+#navbar ul li.active a:before {
+  width: 100%;
+}
+@media screen and (max-width: 700px) {
+  #navbar ul li {
+    float: none;
+  }
+  #navbar ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #navbar ul li a:after {
+    display: none;
+  }
+  #navbar ul li a:before {
+    height: 1px;
+    background: #ffffff;
+    width: 100%;
+    opacity: .2;
+  }
+  #navbar ul li.last > a:before,
+  #navbar ul li:last-child > a:before {
+    display: none;
+  }
+}
+/***************/
+
+#footer p {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  padding-top: 20px;
+}
+
+#footer a{
+  text-decoration: none;
+  color: white;
+}
+
+#footer a:hover{
+  color: grey;
+  text-decoration: blink;
+  }
+
+.push {
+  height:110px;
+}
+
+#prison{
+  height: 100%; margin: 0; padding: 0;
+}
+
+#stratus  {
+  margin-bottom: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 11px;
+  font-family: 'texfont','Ubuntu','Arial';
+  border-color: transparent;
+}
+
+
+#content-wrapper{
+  display: none;
+}
+
+.hidden{display: none;}
+
+#music-chart{
+   min-height: 100%;
+  height: auto !important;
+  width: 80%;
+  background: none repeat scroll 0% 0% rgb(37, 37, 37);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 20px;
+  text-align: left;
+}
+
+
+
+
+#individualPost {
+    background: none repeat scroll 0% 0% rgb(37, 37, 37);
+    margin: 0px 10px 10px 0px;
+    padding: 15px;
+    border: medium none;
+    border-bottom: outset;
+}
+
+.individual_audio {
+    border-top: 14px solid rgb(115, 165, 56);
+}
+
+.individual_blog {
+  border-top: 14px solid #4275ca
+}
+
+#individualPost h1 {
+    font-weight: 200;
+    font-style: bold;
+    font-size: 28px;
+    font-family: 'texfont', 'Ubuntu';
+    margin: 0px 0px 20px;
+    float: left;
+    width: 80%;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+
+#individualPost h1 a{
+  color: white;
+}
+
+#individualPost p{
+  text-align: left;
+}
+
+
+.clearme {
+    height: 1px;
+    font-size: 0.001em;
+    text-indent: -9999px;
+    clear: both;
+}
+
+/* Mobile Layout */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+ ul a {
+  background-image: url('/img/obsidianh.png');
+  background-position: bottom;
+  background-repeat: repeat-x;
+  font-size: 90px;
+  font-family: 'Ubuntu';
+  display: block;
+  padding-top: 1cm;
+  padding-bottom: 1cm;
+}
+
+li{float: none;}
+
+#container{width:100%;}
+
+#content{
+width:100%;
+line-height: 100px;
+}
+
+#content ul { 
+  width: 700px;
+  height: 80px;
+
+}
+
+.push {
+  height:80px;
+}
+
+h1{ font-size: 100px; padding-top: 2px; text-align: center; font-family: 'Ubuntu';}
+
+p {
+  color:white;
+  font-size: 32px;
+  font-family:'texfont', 'Ubuntu';
+  padding-top: 5cm;
+  width:100%;
+  overflow:hidden;
+}
+
+/* New Header shizz */
+#navbar{
+  background-color: rgba(1, 1, 1, 0.9);
+  text-align: center;
+  top: 0;
+  margin:0 auto;
+  left:0;
+  right:0;
+  position:fixed !important;
+  z-index: 10;
+}
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  display: inline-table;
+}
+#navbar ul:after {
+  content: ' ';
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#navbar ul li {
+  float: left;
+  display: inline;
+  padding: 0;
+  text-align: center;
+}
+#navbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 25px;
+  font-family: 'Ubuntu', 'texfont';
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#navbar ul li a:hover {
+  color: lightblue;
+}
+#navbar ul li a:hover:before {
+  width: 100%;
+}
+#navbar ul li a:after {
+  content: '';
+  display: inline;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+#navbar ul li a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: lightblue;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#navbar ul li.last > a:after,
+#navbar ul li:last-child > a:after {
+  display: none;
+}
+#navbar ul li.active a {
+  color: lightblue;
+}
+#navbar ul li.active a:before {
+  width: 100%;
+}
+@media screen and (max-width: 700px) {
+  #navbar ul li {
+    float: none;
+  }
+  #navbar ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #navbar ul li a:after {
+    display: none;
+  }
+  #navbar ul li a:before {
+    height: 1px;
+    background: #ffffff;
+    width: 100%;
+    opacity: .2;
+  }
+  #navbar ul li.last > a:before,
+  #navbar ul li:last-child > a:before {
+    display: none;
+  }
+}
+/***************/
+
+#footer {
+width:100%;
+height:200px;
+background-color: rgba(1, 1, 1, 0.9);
+border-top: dashed;
+bottom: 0;
+right: 0;
+left: 0;
+position: absolute;  
+}
+
+#footer p {
+  font-size: 45px;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  padding-top: 5px;
+}
+
+#stratus  {
+  margin-bottom: 182px;
+} 
+
+}
+
+
+/* Thin Layout */
+
+body.thin #container{
+width:100%;
+}
+
+body.thin #content{
+width:100%;
+padding-top: 180px;
+
+}
+
+
+body.thin #footer{
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 0;
+}
+
+#nav-slider{
+  display: none;
+}
+
+#slide-button{
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+}
+
+#nav-slider:checked ~ #slide-button{
+  color: grey;
+}
+
+body.thin #navbar{
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  transistion: opacity 0s .25s;
+  -moz-transition: opacity 0s .25s;
+  -webkit-transition: opacity 0s .25s;
+}
+
+#nav-slider:checked ~ #navbar {
+  opacity: 1l
+  transistion: opacity 0s 0s;
+  -moz-transition: opacity 0s 0s;
+  -webkit-transition: opacity 0s 0s;
+}
+

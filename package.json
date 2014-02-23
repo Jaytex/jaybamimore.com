@@ -1,0 +1,14 @@
+{
+  "name": "jaytexrevamed",
+  "version": "0.0.1",
+  "private": "true",
+   "scripts": {
+    "start": "nodejs app.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "jade": "0.31.0",
+    "stylus": "*",
+    "nib": "*"
+  }
+}
