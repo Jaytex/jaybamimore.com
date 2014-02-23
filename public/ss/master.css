@@ -7,7 +7,6 @@ html {
   height: 100%;
 }
 
-<<<<<<< HEAD:public/ss/master.css
 p {
   color:white;
   font-size: 16px;
@@ -24,15 +23,6 @@ width:100%;
 height: 100%;
 }
 
-=======
-#content {
-min-height: 100%;
-height: auto !important;
-width:100%;
-height: 100%;
-}
-
->>>>>>> 5e48182baf45fb5aeb0b2e12e5ee9099fe0c4ff3:css/master.css
 
 /* New Header shizz */
 #navbar{
@@ -154,7 +144,6 @@ height: 100%;
 
 #footer p {
   font-size: 15px;
-  padding-left: 15px;
   color: white;
   text-decoration: none;
   text-align: left;
@@ -174,11 +163,7 @@ height: 100%;
 #footer {
   width: 100%;
   height:90px;
-<<<<<<< HEAD:public/ss/master.css
   background: rgb(37, 37, 37);
-=======
-  background-color: rgb(54, 54, 54);
->>>>>>> 5e48182baf45fb5aeb0b2e12e5ee9099fe0c4ff3:css/master.css
   border-top: dashed;
   bottom: 0;
   right: 0;
@@ -232,11 +217,7 @@ body.thin li{
 }
 
   body.wide #content ul a {
-<<<<<<< HEAD:public/ss/master.css
   background-image: url('/img/obsidian.png');
-=======
-  background-image: url('img/obsidian.png');
->>>>>>> 5e48182baf45fb5aeb0b2e12e5ee9099fe0c4ff3:css/master.css
   background-repeat: no-repeat;
   background-position: right;
   line-height: 80px;
@@ -250,11 +231,7 @@ body.thin li{
 }
 
 body.wider #content ul a {
-<<<<<<< HEAD:public/ss/master.css
   background-image: url('/img/obsidian.png');
-=======
-  background-image: url('img/obsidian.png');
->>>>>>> 5e48182baf45fb5aeb0b2e12e5ee9099fe0c4ff3:css/master.css
   background-repeat: no-repeat;
   background-position: right;
   line-height: 80px;
@@ -269,11 +246,7 @@ body.wider #content ul a {
 
 
  body.thin ul a{
-<<<<<<< HEAD:public/ss/master.css
   background-image: url('/img/obsidianh.png');
-=======
-  background-image: url('img/obsidianh.png');
->>>>>>> 5e48182baf45fb5aeb0b2e12e5ee9099fe0c4ff3:css/master.css
   background-position: bottom;
   line-height: 80px;
   padding-right: 32px;

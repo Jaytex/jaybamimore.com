@@ -191,11 +191,7 @@ h1 {
   text-align:center;
   color: black;
   font-size: 72px;
-<<<<<<< HEAD:public/ss/myRes.css
   font-family:'texfont';
-=======
-  font-family:'Ubuntu';
->>>>>>> 5e48182baf45fb5aeb0b2e12e5ee9099fe0c4ff3:css/myRes.css
   padding-top: 10px;
 }
 
@@ -285,11 +281,7 @@ body.wider #content{
  #footer {
   width: 100%;
   height:90px;
-<<<<<<< HEAD:public/ss/myRes.css
   background: rgb(37, 37, 37);
-=======
-  background-color: rgb(54, 54, 54);
->>>>>>> 5e48182baf45fb5aeb0b2e12e5ee9099fe0c4ff3:css/myRes.css
   border-top: dashed;
   bottom: 0;
   position: absolute;  
@@ -306,11 +298,7 @@ body.wider #content{
 
 /* New Header shizz */
 #navbar{
-<<<<<<< HEAD:public/ss/myRes.css
   background: rgb(37, 37, 37);
-=======
-  background-color: rgba(1, 1, 1, 1);
->>>>>>> 5e48182baf45fb5aeb0b2e12e5ee9099fe0c4ff3:css/myRes.css
   text-align: center;
   top: 0;
   margin:0 auto;
