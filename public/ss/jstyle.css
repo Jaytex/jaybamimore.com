@@ -57,6 +57,11 @@ a{
 #content a:hover{
   color: grey;
   text-decoration: blink;
+
+  color: grey;
+}
+#content a:link, a:hover{
+  text-decoration: none;
 }
 
 #music-chart a {
@@ -232,6 +237,7 @@ h2 {
 /* New Header shizz */
 #navbar{
   background: rgb(37, 37, 37);
+  background-color: rgba(1, 1, 1, 1);
   text-align: center;
   top: 0;
   margin:0 auto;
@@ -644,6 +650,15 @@ body.thin #content{
 width:100%;
 padding-top: 180px;
 
+}
+
+
+body.thin #footer{
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 0;
 }
 
 

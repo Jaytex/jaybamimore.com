@@ -13,6 +13,7 @@ function dynamicLayout(){
 
 	if (browserWidth < 366) {
 		changeLayout("slim");
+
 	}
 	if (browserWidth < 700){
 		changeLayout("thin");
@@ -45,3 +46,4 @@ function changeLayout(nl){
 	
 	addEvent(window, 'load', dynamicLayout);
 	addEvent(window, 'resize', dynamicLayout);
+
