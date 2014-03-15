@@ -6,6 +6,6 @@ $(function () {
       else if (url == '/resume')
         $('head').prepend('<link rel="stylesheet" href="/ss/myRes.css" type="text/css" />');
       else
-        $('head').prepend('<link rel="stylesheet" href="/ss/jstyle.css" type="text/css" />');  
+        $('head').prepend('<link rel="stylesheet" href="/ss/jstyle.css" type="text/css" />'); 
       });
 

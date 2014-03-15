@@ -27,6 +27,7 @@ p {
 body {
 	background: gainsboro;
   text-align: center;
+  margin: 0 0 100px;
 }
 
 body.wider {

@@ -1,9 +1,9 @@
 {
-  "name": "jaytexrevamed",
+  "name": "jaytex",
   "version": "0.0.1",
   "private": "true",
    "scripts": {
-    "start": "nodejs app.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "express": "*",
