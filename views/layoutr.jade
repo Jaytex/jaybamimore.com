@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    title #{title} | Jay
+    meta(charset='UTF-8')
+    link(href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono\' rel=\'stylesheet\' type=\'text/css')
+    link(rel='shortcut icon', href='/img/favicon.ico')
+    link(rel='stylesheet', type='text/css', href='ss/myRes.css')
+    script(type='text/javascript', src='/js/jquery.js')
+    script(type='text/javascript', src='/js/dyna.js')
+    
+
+  body
+      #navbar 
+        ul
+          li
+            a(href='/')
+              span Home
+          li
+            a(href='blog')
+              span Blog
+          li
+            a(href='projects')
+              span Projects
+          li
+            a(href='music')
+              span Music
+          li
+           a(href='resume')
+             span Resume
+          li
+           a(href='about')
+              span About
+
+   
+      #content
+        block content
+        .push
+
+
+      #footer
+        p
+          | &copy 2014
+          a(href='/')  Jay Bamimore 
+
+
+
+ 
