@@ -10,7 +10,7 @@ html {
 p {
   color:white;
   font-size: 16px;
-  font-family:'Ubuntu Light';
+  font-family:'texfont', 'Ubuntu Light';
   padding-top: 0.8cm;
   width:100%;
   overflow:hidden;
@@ -59,7 +59,7 @@ height: 100%;
   text-decoration: none;
   display: inline-block;
   padding: 15px 25px;
-  font-family: 'Ubuntu', 'texfont';
+  font-family: 'Ubuntu', 'texfont', 'Helvetica';
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -195,6 +195,7 @@ h2 {
 a {
   background-color:transparent;
   display: inline-block;
+  font-family: 'texfont';
   outline: none;
 }
 
@@ -225,7 +226,7 @@ body.wide #content ul a {
   padding-left: 32px;
   display: block;
   text-decoration: none;
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu','texfont', 'Helvetica';
   font-size: 21px;
   color: black;
 }
@@ -239,7 +240,7 @@ body.wider #content ul a {
   padding-left: 32px;
   display: block;
   text-decoration: none;
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu','texfont',  'Helvetica';
   font-size: 21px;
   color: black;
 }
@@ -253,7 +254,7 @@ body.wider #content ul a {
   padding-left: 0;
   display: block;
   text-decoration: none;
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu','texfont', 'Helvetica';
   font-size: 21px;
   color: black;
   background-repeat: repeat-x;

@@ -7,7 +7,7 @@
 p {
 	color:white;
 	font-size: 16px;
-	font-family:'Ubuntu Light';
+	font-family:'Ubuntu Light', 'texfont';
 	padding-top: 0.8cm;
   width:100%;
   overflow:hidden;
