@@ -128,6 +128,24 @@ div.abstract {width:100%;}
 dt.enumerate-enumitem{float:left; clear:left; margin-left:1em; margin-right:1em;}
 
 /* Design Additions */
+
+@media (min-width: 768px) {
+    .navbar-centered .navbar-nav {
+        float: none;
+        text-align: center;
+    }
+    .navbar-centered .navbar-nav > li {
+        float: none;
+    }
+    .navbar-centered .nav > li {
+        display: inline;
+    }
+    .navbar-centered .nav > li > a {
+        display: inline-block;
+    }
+}
+
+
 body {
 	background: gainsboro;
 }
@@ -354,21 +372,6 @@ body.wider #content{
     clear: both;
 }
 
-@media (min-width: 768px) {
-    .navbar-centered .navbar-nav {
-        float: none;
-        text-align: center;
-    }
-    .navbar-centered .navbar-nav > li {
-        float: none;
-    }
-    .navbar-centered .nav > li {
-        display: inline;
-    }
-    .navbar-centered .nav > li > a {
-        display: inline-block;
-    }
-}
 
 
 /* end css.sty */
