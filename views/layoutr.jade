@@ -11,29 +11,36 @@ html
     
 
   body
-      #navbar 
-        ul
-          li
-            a(href='/')
-              span Home
-          li
-            a(href='blog')
-              span Blog
-          li
-            a(href='projects')
-              span Projects
-          li
-            a(href='music')
-              span Music
-          li
-           a(href='resume')
-             span Resume
-          li
-           a(href='about')
-              span About
+     //
+     Fixed navbar 
+    .navbar.navbar-centered.navbar-inverse.navbar-fixed-top(role='navigation')
+      .push_min
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='index') Home
+            li
+              a(href='blog') Blog
+            li
+              a(href='projects') Projects
+            li
+              a(href='music') Music
+            li
+              a(href='resume') Resume
+            li
+              a(href='about') About
+        //
+          /.nav-collapse 
 
    
-      #content
+      .container
         block content
         .push
 

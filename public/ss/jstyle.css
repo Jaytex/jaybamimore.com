@@ -4,6 +4,26 @@
    ...
    */
 
+@import url("bootstrap.min.css");
+@import url("bootstrap-theme.min.css");
+
+
+.centered{
+  max-width: 550px;  
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.push_min{
+  height:40px;
+}
+.push_min2{
+  width: 20px;
+}
+
+
 p {
 	color:white;
 	font-size: 16px;
@@ -229,120 +249,7 @@ h2 {
 }
 
 
-/* New Header shizz */
-#navbar{
-  background: rgb(37, 37, 37);
-  text-align: center;
-  top: 0;
-  margin:0 auto;
-  left:0;
-  right:0;
-  position:fixed !important;
-  z-index: 10;
-}
-#navbar ul {
-  margin: 0;
-  padding: 0;
-  display: inline-table;
-}
-#navbar ul:after {
-  content: ' ';
-  display: block;
-  font-size: 0;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-#navbar ul li {
-  float: left;
-  display: inline;
-  padding: 0;
-  text-align: center;
-}
-#navbar ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  display: inline-block;
-  padding: 15px 25px;
-  font-family: 'Ubuntu', 'texfont';
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 14px;
-  position: relative;
 
-  -webkit-transition: color .25s;
-  -moz-transition: color .25s;
-  -ms-transition: color .25s;
-  -o-transition: color .25s;
-  transition: color .25s;
-}
-#navbar ul li a:hover {
-  color: lightblue;
-}
-#navbar ul li a:hover:before {
-  width: 100%;
-}
-#navbar ul li a:after {
-  content: '';
-  display: inline;
-  position: absolute;
-  right: -3px;
-  top: 19px;
-  height: 6px;
-  width: 6px;
-  background: #ffffff;
-  opacity: .5;
-}
-#navbar ul li a:before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 0;
-  background: lightblue;
-  -webkit-transition: width .25s;
-  -moz-transition: width .25s;
-  -ms-transition: width .25s;
-  -o-transition: width .25s;
-  transition: width .25s;
-}
-#navbar ul li.last > a:after,
-#navbar ul li:last-child > a:after {
-  display: none;
-}
-#navbar ul li.active a {
-  color: lightblue;
-}
-#navbar ul li.active a:before {
-  width: 100%;
-}
-@media screen and (max-width: 700px) {
-  #navbar ul li {
-    float: none;
-  }
-  #navbar ul li a {
-    width: 100%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  #navbar ul li a:after {
-    display: none;
-  }
-  #navbar ul li a:before {
-    height: 1px;
-    background: #ffffff;
-    width: 100%;
-    opacity: .2;
-  }
-  #navbar ul li.last > a:before,
-  #navbar ul li:last-child > a:before {
-    display: none;
-  }
-}
-/***************/
 
 #footer p {
   font-size: 15px;
@@ -446,11 +353,25 @@ h2 {
     clear: both;
 }
 
-/* Mobile Layout */
+@media (min-width: 768px) {
+    .navbar-centered .navbar-nav {
+        float: none;
+        text-align: center;
+    }
+    .navbar-centered .navbar-nav > li {
+        float: none;
+    }
+    .navbar-centered .nav > li {
+        display: inline;
+    }
+    .navbar-centered .nav > li > a {
+        display: inline-block;
+    }
+}
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+/* Mobile Layout 
+
+@media (max-device-width : 480px) {
 
  ul a {
   background-image: url('/img/obsidianh.png');
@@ -493,146 +414,14 @@ p {
   overflow:hidden;
 }
 
-/* New Header shizz */
-#navbar{
-  background-color: rgba(1, 1, 1, 0.9);
-  text-align: center;
-  top: 0;
-  margin:0 auto;
-  left:0;
-  right:0;
-  position:fixed !important;
-  z-index: 10;
-}
-#navbar ul {
-  margin: 0;
-  padding: 0;
-  display: inline-table;
-}
-#navbar ul:after {
-  content: ' ';
-  display: block;
-  font-size: 0;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-#navbar ul li {
-  float: left;
-  display: inline;
-  padding: 0;
-  text-align: center;
-}
-#navbar ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  display: inline-block;
-  padding: 15px 25px;
-  font-family: 'Ubuntu', 'texfont';
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 14px;
-  position: relative;
 
-  -webkit-transition: color .25s;
-  -moz-transition: color .25s;
-  -ms-transition: color .25s;
-  -o-transition: color .25s;
-  transition: color .25s;
-}
-#navbar ul li a:hover {
-  color: lightblue;
-}
-#navbar ul li a:hover:before {
-  width: 100%;
-}
-#navbar ul li a:after {
-  content: '';
-  display: inline;
-  position: absolute;
-  right: -3px;
-  top: 19px;
-  height: 6px;
-  width: 6px;
-  background: #ffffff;
-  opacity: .5;
-}
-#navbar ul li a:before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 0;
-  background: lightblue;
-  -webkit-transition: width .25s;
-  -moz-transition: width .25s;
-  -ms-transition: width .25s;
-  -o-transition: width .25s;
-  transition: width .25s;
-}
-#navbar ul li.last > a:after,
-#navbar ul li:last-child > a:after {
-  display: none;
-}
-#navbar ul li.active a {
-  color: lightblue;
-}
-#navbar ul li.active a:before {
-  width: 100%;
-}
-@media screen and (max-width: 700px) {
-  #navbar ul li {
-    float: none;
-  }
-  #navbar ul li a {
-    width: 100%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  #navbar ul li a:after {
-    display: none;
-  }
-  #navbar ul li a:before {
-    height: 1px;
-    background: #ffffff;
-    width: 100%;
-    opacity: .2;
-  }
-  #navbar ul li.last > a:before,
-  #navbar ul li:last-child > a:before {
-    display: none;
-  }
-}
-/***************/
-
-#footer {
-width:100%;
-height:200px;
-background-color: rgba(1, 1, 1, 0.9);
-border-top: dashed;
-bottom: 0;
-right: 0;
-left: 0;
-position: absolute;  
-}
-
-#footer p {
-  font-size: 45px;
-  color: white;
-  text-decoration: none;
-  text-align: left;
-  padding-top: 5px;
-}
 
 #stratus  {
   margin-bottom: 182px;
 } 
 
 }
-
+*/
 
 /* Thin Layout */
 
@@ -653,34 +442,5 @@ body.thin #footer{
   bottom: 0;
   position: absolute;
   margin-bottom: 0;
-}
-
-#nav-slider{
-  display: none;
-}
-
-#slide-button{
-  display: inline-block;
-  float: left;
-  cursor: pointer;
-}
-
-#nav-slider:checked ~ #slide-button{
-  color: grey;
-}
-
-body.thin #navbar{
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  transistion: opacity 0s .25s;
-  -moz-transition: opacity 0s .25s;
-  -webkit-transition: opacity 0s .25s;
-}
-
-#nav-slider:checked ~ #navbar {
-  opacity: 1l
-  transistion: opacity 0s 0s;
-  -moz-transition: opacity 0s 0s;
-  -webkit-transition: opacity 0s 0s;
 }
 
