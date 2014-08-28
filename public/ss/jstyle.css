@@ -7,7 +7,7 @@
 p {
 	color:white;
 	font-size: 16px;
-	font-family:'Ubuntu Light', 'texfont';
+	font-family:'Ubuntu Light';
 	padding-top: 0.8cm;
   width:100%;
   overflow:hidden;
@@ -27,7 +27,6 @@ p {
 body {
 	background: gainsboro;
   text-align: center;
-  margin: 0 0 100px;
 }
 
 body.wider {

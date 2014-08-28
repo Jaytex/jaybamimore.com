@@ -10,7 +10,7 @@ html {
 p {
   color:white;
   font-size: 16px;
-  font-family:'texfont', 'Ubuntu Light';
+  font-family:'Ubuntu Light';
   padding-top: 0.8cm;
   width:100%;
   overflow:hidden;
@@ -59,7 +59,7 @@ height: 100%;
   text-decoration: none;
   display: inline-block;
   padding: 15px 25px;
-  font-family: 'Ubuntu', 'texfont', 'Helvetica';
+  font-family: 'Ubuntu', 'texfont';
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -138,6 +138,7 @@ height: 100%;
   }
 }
 /***************/
+
 .push {
   height:50px;
 }
@@ -172,17 +173,17 @@ height: 100%;
   z-index: 10;
 }
 
-html {height: 100% }
+html { height: 100% }
 
 h1 {
   text-align:center;
   color: black;
   font-size: 72px;
-  font-family:'texfont', 'Ubuntu';
-  padding-top: 10px;
+  font-family:'texfont';
+  padding-top: 1px;
 }
 
-body.thin h1{ font-size: 40px; padding-top: 2px;}
+body.thin h1{ font-size: 30px; padding-top: 2px; text-align: center;}
 
 h2 {
   color: black;
@@ -195,7 +196,6 @@ h2 {
 a {
   background-color:transparent;
   display: inline-block;
-  font-family: 'texfont';
   outline: none;
 }
 
@@ -208,6 +208,7 @@ a {
 body.thin ul { 
   width: 300px;
   height: 40px;
+  padding-bottom: 70px;
 
 }
 
@@ -217,7 +218,7 @@ body.thin li{
   float: none;
 }
 
-body.wide #content ul a {
+  body.wide #content ul a {
   background-image: url('/img/obsidian.png');
   background-repeat: no-repeat;
   background-position: right;
@@ -226,7 +227,7 @@ body.wide #content ul a {
   padding-left: 32px;
   display: block;
   text-decoration: none;
-  font-family: 'Ubuntu','texfont', 'Helvetica';
+  font-family: 'Ubuntu';
   font-size: 21px;
   color: black;
 }
@@ -240,7 +241,7 @@ body.wider #content ul a {
   padding-left: 32px;
   display: block;
   text-decoration: none;
-  font-family: 'Ubuntu','texfont',  'Helvetica';
+  font-family: 'Ubuntu';
   font-size: 21px;
   color: black;
 }
@@ -249,16 +250,15 @@ body.wider #content ul a {
  body.thin ul a{
   background-image: url('/img/obsidianh.png');
   background-position: bottom;
-  line-height: 80px;
-  padding-right: 32px;
+  line-height: 50px;
+  padding-right: 0px;
   padding-left: 0;
   display: block;
   text-decoration: none;
-  font-family: 'Ubuntu','texfont', 'Helvetica';
-  font-size: 21px;
+  font-family: 'Ubuntu';
+  font-size: 19px;
   color: black;
   background-repeat: repeat-x;
-  font-size: 21px;
   text-align: center;
 }
 
@@ -305,11 +305,11 @@ and (max-device-width : 480px) {
   background-image: url('/img/obsidianh.png');
   background-position: bottom;
   background-repeat: repeat-x;
-  font-size: 90px;
+  font-size: 60px;
   font-family: 'Ubuntu';
   display: block;
-  padding-top: 1cm;
-  padding-bottom: 1cm;
+  padding-top: 0cm;
+  padding-bottom: 0cm;
 }
 
 li{float: none;}
@@ -360,7 +360,8 @@ width:100%;
 
 body.thin #content{
 width:100%;
-line-height: 40px;
+line-height: 20px;
+padding-bottom: 50px;
 }
 
 body.thin #navbar{

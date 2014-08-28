@@ -1,5 +1,20 @@
- 
-/* start css.sty */
+/* Author: Jay Bamimore
+
+   Contains the CSS for all pages on the site. It is broken into three main bodies..
+   myRes, index, jstyle 
+
+   myRes has rules specific to the resume page (does not include j-style content)
+   index has rules specific to the index page (main difference include main menu on page)
+   jstyle has all the styling rules for all pages
+
+   Reason for one css.css file is to improve with load times (avoiding FOUC mainly),
+   and reduce requests to the server.
+
+
+*/
+
+/************************************ myRes ************************************
+
 .LinLibertineTB-tlf-t-1x-x-248{font-size:248%; color: black;}
 p.noindent { text-indent: 0em; color: black; font-family: 'Ubuntu', 'texfont';}
 td p.noindent { text-indent: 0em; margin-top:0em; font-family: 'Ubuntu', 'texfont';}
@@ -110,47 +125,23 @@ div.author{black-space: nowrap;}
 div.abstract {width:100%;}
 dt.enumerate-enumitem{float:left; clear:left; margin-left:1em; margin-right:1em;}
 
-/* Design Additions */
-body {
-	background: gainsboro;
-}
-
-body.wider {
-  background: gainsboro;
-  height: 100%;
-}
-
-body.thin #container{
-width:100%;
-}
-
-body.thin #content{
-width:100%;
-padding-top: 180px;
-
-}
+************************************ myRes ************************************/
 
 
-body.thin #footer{
-  right: 0;
-  left: 0;
-  bottom: 0;
-  position: absolute;
-  margin-bottom: 0;
-}
+/************************************ index ************************************/
 
-html {
-  background:gainsboro;
-  min-height:100%;
-  position: relative;
-}
 
-body {
-  margin:0 0 100px;
-}
-a, p {
-  font-family: 'Ubuntu', 'texfont';
-}
+
+/************************************ index ************************************/
+
+
+/************************************ jstyle ************************************/
+
+/*  Html, tags, etc */
+
+
+#master html {height: 100%;}
+#style html {position: relative; height: 100%;}
 
 @font-face{
   font-family: "texfont";
@@ -158,145 +149,40 @@ a, p {
   src: local("Sansation Light"), url('http://www.fontsforweb.com/public/fonts/423/SansationLight.woff') format("woff"), url('http://www.fontsforweb.com/public/fonts/423/SansationLight.ttf') format("truetype");
 }
 
-#container{
-  width:100%;
-  margin:0 auto;
-}
+p {color:white;font-size: 16px;font-family:'Ubuntu Light';padding-top: 0.8cm;width:100%; overflow:hidden;}
 
-#content {
-min-height: 100%;
-height: auto !important;
-width:100%;
-display: block;
-position: relative;
-}
+a {background-color: transparent; color: white; outline: none;}
 
-#music-chart{
-   min-height: 100%;
-  height: auto !important;
-  width: 80%;
-  background-color: gainsboro;
-  border-left: outset;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  text-align: left;
-  padding-left: 5px;
-}
-body.thin #music-chart{
-  padding-top: 180px;
-  border-left: thin;
-}
-h1 {
-  text-align:center;
-  color: black;
-  font-size: 72px;
-  font-family:'texfont';
-  padding-top: 10px;
-}
+.jtext1 { font-family: 'texfont', 'Ubuntu' ; color:black;}
+
+.jtext2 { font-family: 'texfont', 'Ubuntu' ; color:white;}
+
+h1 {text-align:center;color: black;font-size: 72px;font-family:'texfont', 'Ubuntu';padding-top: 10px;}
 
 body.thin h1{ font-size: 40px; padding-top: 2px;}
 
-h2 {
-  color: black;
-  font-size: 18px;
-  font-family: 'texfont';
-  float: left;
+
+/* Navigation */
+#navbar{background: rgb(37, 37, 37);text-align: center;top: 0;margin:0 auto;left:0;right:0;position:fixed !important;z-index: 10;}
+#navbar ul { margin: 0; padding: 0; display: inline-table;}
+#navbar ul:after {content: ' ';display: block;font-size: 0;height: 0;clear: both;visibility: hidden;}
+#navbar ul li { float: left; display: inline; padding: 0; text-align: center;}
+#navbar ul li a {
+  color: #ffffff;
   text-decoration: none;
-}
-
-
-
-#individualPost {
-    background: none repeat scroll 0% 0% rgb(37, 37, 37);
-    margin: 0px 10px 10px 0px;
-    padding: 15px;
-    border: medium none;
-    border-bottom: outset;
-}
-
-.individual_audio {
-    border-top: 14px solid rgb(115, 165, 56);
-}
-
-.individual_blog {
-  border-top: 14px solid #4275ca
-}
-
-#individualPost h1 {
-    font-weight: 200;
-    font-style: bold;
-    font-size: 28px;
-    font-family: 'texfont', 'Ubuntu';
-    margin: 0px 0px 20px;
-    float: left;
-    width: 80%;
-    text-align: left;
-    color: black;
-    text-decoration: none;
-}
-
-#individualPost h1 a{
-  color: black;
-}
-
-#individualPost p{
-  text-align: left;
-}
-
-
-.clearme {
-    height: 1px;
-    font-size: 0.001em;
-    text-indent: -9999px;
-    clear: both;
-}
-
-body.wider #content{
-  min-height: 100%;
-  height: auto !important;
-  width: 100%;
-  display: block;
+  display: inline-block;
+  padding: 15px 25px;
+  font-family: 'Ubuntu', 'texfont';
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
   position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
 }
-
-#content.blog iframe{
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  display: table;
-}
-
-#content .blog{
-  min-height: 100%;
-  height: auto !important;
-  width: 80%;
-  background-color: transparent;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  text-align: left;
-}
-
- #footer {
-  width: 100%;
-  height:90px;
-  background: rgb(37, 37, 37);
-  border-top: dashed;
-  bottom: 0;
-  position: absolute;  
-  z-index: 10;
-}
-
-#stratus  {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  font-size: 11px;
-  font-family: 'texfont','Ubuntu','Arial';
-  border-color: transparent;
-}
-
-/* New Header shizz */
 #navbar{
   background: rgb(37, 37, 37);
   text-align: center;
@@ -409,205 +295,217 @@ body.wider #content{
     display: none;
   }
 }
-/***************/
 
+/* Body and Contents */
+#master html{height: 100%}
+#master body{background: gainsboro; text-align: left;}
 
-#footer p {
-  font-size: 15px;
-  padding-left: 15px;
-  color: white;
-  text-decoration: none;
+#style body {background: gainsboro;text-align: center; height: 100%;margin: 0 0 100px;}
+
+#style #content {min-height: 100%;height: auto !important;width:100%;display: block;position: relative;}
+#master #content {min-height: 100%; height: auto !important; width: 100%; height: 100%;}
+
+body.thin #content{padding-top: 180px;}
+
+#content.blog iframe{
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  display: table;
+}
+
+#content .blog{
+  min-height: 100%;
+  height: auto !important;
+  width: 80%;
+  background: none repeat scroll 0% 0% rgb(37, 37, 37);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
   text-align: left;
-  padding-top: 20px;
 }
 
-#footer a{
+.clearme {height: 1px;font-size: 0.001em;text-indent: -9999px;clear: both;}
+
+.push {height:80px;}
+
+#content a:link, a:visited{color: white;text-decoration: none;}
+
+#content a:hover{color: grey;text-decoration: blink;}
+
+#master ul {list-style-type: none;width: 663px;margin: auto;}
+
+#master body.thin ul { width: 300px;height: 40px;}
+
+#master li {float: left;}
+
+#master body.thin li{float: none;}
+
+#master body.wider #content{
+  min-height: 100%;
+  height: auto !important;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+body.wide #master #content ul a {
+  background-image: url('/img/obsidian.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  line-height: 80px;
+  padding-right: 32px;
+  padding-left: 32px;
+  display: block;
   text-decoration: none;
-  color: white;
+  font-family: 'Ubuntu';
+  font-size: 21px;
+  color: black;
 }
 
-#footer a:hover{
-  color: grey;
-  }
-
-.push {
-  height:80px;
+body.wider #container #master #content ul a {
+  background-image: url('/img/obsidian.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  line-height: 80px;
+  padding-right: 32px;
+  padding-left: 32px;
+  display: block;
+  text-decoration: none;
+  font-family: 'Ubuntu';
+  font-size: 21px;
+  color: black;
 }
 
-#prison{
-  height: 100%; margin: 0; padding: 0;
+ body.thin #container #master #content ul a{
+  background-image: url('/img/obsidianh.png');
+  background-position: bottom;
+  line-height: 80px;
+  padding-right: 32px;
+  padding-left: 0;
+  display: block;
+  text-decoration: none;
+  font-family: 'Ubuntu';
+  font-size: 21px;
+  color: black;
+  background-repeat: repeat-x;
+  font-size: 21px;
+  text-align: center;
 }
 
+body.thin #container{width:100%;}
+body.thin #master #content{width:100%;line-height: 40px;}
+body.thin #master #navbar{display: none;}
+body.thin #style #content{width: 100%; padding-top: 180px;}
 
-
-#content-wrapper{
-  display: none;
+#resume-block{
+  min-height: 100%;
+  height: auto !important;
+  width: 80%;
+  background-color: gainsboro;
+  border-left: outset;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: left;
+  padding-left: 5px;
 }
+
+#resume-block a{text-align: left; color: black;}
+
+body.thin #resume-block{ padding-top: 180px; border-left: thin;}
 
 .hidden{display: none;}
-.clearme {
-    height: 1px;
-    font-size: 0.001em;
-    text-indent: -9999px;
-    clear: both;
+
+#music-chart{min-height: 100%;height: auto !important;width: 80%;
+  background: none repeat scroll 0% 0% rgb(37, 37, 37);
+  margin-left: auto;margin-right: auto;position: relative;padding: 20px;
+  text-align: left;
 }
 
-/* Mobile Layout */
-
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-
-/* New Header shizz */
-#navbar{
-  background-color: rgba(1, 1, 1, 1);
-  text-align: center;
-  top: 0;
-  margin:0 auto;
-  left:0;
-  right:0;
-  position:fixed !important;
-  z-index: 10;
-}
-#navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  display: inline-table;
-  zoom: 1;
- 
-}
-#navbar ul:after {
-  content: ' ';
-  display: block;
-  font-size: 0;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-#navbar ul li {
-  float: left;
-  display: inline;
-  padding: 0;
-  text-align: center;
-}
-#navbar ul li a {
-  color: #ffffff;
+#music-chart a {
+  background-color:transparent;
+  color: white;
+  outline: none;
   text-decoration: none;
-  display: block;
-  padding: 15px 25px;
-  font-family: 'Ubuntu', 'texfont';
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 14px;
-  position: relative;
-
-  -webkit-transition: color .25s;
-  -moz-transition: color .25s;
-  -ms-transition: color .25s;
-  -o-transition: color .25s;
-  transition: color .25s;
-}
-#navbar ul li a:hover {
-  color: lightblue;
-}
-#navbar ul li a:hover:before {
-  width: 100%;
-}
-#navbar ul li a:after {
-  content: '';
-  display: block;
-  position: absolute;
-  right: -3px;
-  top: 19px;
-  height: 6px;
-  width: 6px;
-  background: #ffffff;
-  opacity: .5;
-}
-#navbar ul li a:before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 0;
-  background: lightblue;
-  -webkit-transition: width .25s;
-  -moz-transition: width .25s;
-  -ms-transition: width .25s;
-  -o-transition: width .25s;
-  transition: width .25s;
-}
-#navbar ul li.last > a:after,
-#navbar ul li:last-child > a:after {
-  display: none;
-}
-#navbar ul li.active a {
-  color: lightblue;
-}
-#navbar ul li.active a:before {
-  width: 100%;
-}
-@media screen and (max-width: 768px) {
-  #navbar ul li {
-    float: none;
-  }
-  #navbar ul li a {
-    width: 100%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  #navbar ul li a:after {
-    display: none;
-  }
-  #navbar ul li a:before {
-    height: 1px;
-    background: #ffffff;
-    width: 100%;
-    opacity: .2;
-  }
-  #navbar ul li.last > a:before,
-  #navbar ul li:last-child > a:before {
-    display: none;
-  }
+  float: none;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 1cm;
+  padding-top: 1cm;
+  font-family: 'texfont', 'Ubuntu';
+  text-align: left;
 }
 
-p {
-  color:black;
-  font-size: 32px;
-  font-family:'texfont', 'Ubuntu';
-  padding-top: 5cm;
-  width:100%;
-  overflow:hidden;
-}
+#music-chart ul{list-style: none;}
 
-#footer {
-width:100%;
-height:180px;
-background-color: rgba(1, 1, 1, 0.9);
-border-top: dashed;
-bottom: 0;
-right: 0;
-left: 0;
-position: absolute;  
-}
-
-#footer p {
-  font-size: 45px;
-  color: black;
+#music-chart ul a{
   text-decoration: none;
   text-align: left;
-  padding-top: 5px;
+  display: block;
+  color: black;
+  border: dashed;
+  border-color: ghostwhite;
+  border-radius: 5px;
 }
 
-#stratus  {
-  margin-bottom: 182px;
-} 
+#music-chart li{text-align: left;}
 
+#individualPost {
+    background: none repeat scroll 0% 0% rgb(37, 37, 37);
+    margin: 0px 10px 10px 0px;
+    padding: 15px;
+    border: medium none;
+    border-bottom: outset;
 }
-/* end css.sty */
+
+.individual_audio {border-top: 14px solid rgb(115, 165, 56);}
+
+.individual_blog {border-top: 14px solid #4275ca}
+
+#individualPost h1 {
+    font-weight: 200;
+    font-style: bold;
+    font-size: 28px;
+    font-family: 'texfont', 'Ubuntu';
+    margin: 0px 0px 20px;
+    float: left;
+    width: 80%;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+
+#individualPost h1 a{color: white;}
+
+#individualPost p{text-align: left;}
+
+
+/* Footer */
+
+#footer {
+  width: 100%;
+  height:90px;
+  background: rgb(37, 37, 37);
+  border-top: dashed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;  
+  z-index: 10;
+}
+
+#footer p {font-size: 15px;color: white;text-decoration: none;text-align: left;padding-top: 20px;}
+
+#footer a{text-decoration: none;color: white;}
+
+#footer a:hover{color: grey;}
+
+body.thin #footer{right: 0;left: 0;bottom: 0;position: absolute;margin-bottom: 0;}
+
+
+
+
+
+/************************************ jsytle ************************************/
 
