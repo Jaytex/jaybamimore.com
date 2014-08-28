@@ -354,44 +354,22 @@ body.wider #content{
     clear: both;
 }
 
-/* Mobile Layout */
-
-@media (max-device-width : 480px) {
-
-
-
-p {
-  color:black;
-  font-size: 32px;
-  font-family:'texfont', 'Ubuntu';
-  padding-top: 5cm;
-  width:100%;
-  overflow:hidden;
+@media (min-width: 768px) {
+    .navbar-centered .navbar-nav {
+        float: none;
+        text-align: center;
+    }
+    .navbar-centered .navbar-nav > li {
+        float: none;
+    }
+    .navbar-centered .nav > li {
+        display: inline;
+    }
+    .navbar-centered .nav > li > a {
+        display: inline-block;
+    }
 }
 
-#footer {
-width:100%;
-height:180px;
-background-color: rgba(1, 1, 1, 0.9);
-border-top: dashed;
-bottom: 0;
-right: 0;
-left: 0;
-position: absolute;  
-}
 
-#footer p {
-  font-size: 45px;
-  color: black;
-  text-decoration: none;
-  text-align: left;
-  padding-top: 5px;
-}
-
-#stratus  {
-  margin-bottom: 182px;
-} 
-
-}
 /* end css.sty */
 
