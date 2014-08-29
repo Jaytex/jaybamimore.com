@@ -145,6 +145,10 @@ dt.enumerate-enumitem{float:left; clear:left; margin-left:1em; margin-right:1em;
     }
 }
 
+.navbar{
+  background: none repeat scroll 0% 0% rgb(37, 37, 37);
+  border-bottom: transparent; 
+}
 
 body {
 	background: gainsboro;
@@ -183,8 +187,28 @@ html {
 body {
   margin:0 0 100px;
 }
-a, p {
-  font-family: 'Ubuntu', 'texfont';
+p {
+  color:white;
+  font-size: 16px;
+  font-family:'Ubuntu Light';
+  padding-top: 0.8cm;
+  width:100%;
+  overflow:hidden;
+}
+
+.jtext1 {
+  font-family: 'texfont', 'Ubuntu' ; 
+  color:black;
+}
+
+.jtext2 {
+  font-family: 'texfont', 'Ubuntu' ; 
+  color:white;
+}
+a{
+  background-color: transparent;
+  color: white;
+  outline: none;
 }
 
 @font-face{
@@ -316,7 +340,7 @@ body.wider #content{
  #footer {
   width: 100%;
   height:90px;
-  background: rgb(37, 37, 37);
+  background: none repeat scroll 0% 0% rgb(37, 37, 37);
   border-top: dashed;
   bottom: 0;
   position: absolute;  

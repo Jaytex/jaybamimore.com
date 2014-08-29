@@ -46,14 +46,9 @@ p {
 
 body {
 	background: gainsboro;
-  text-align: center;
 }
 
-body.wider {
-  background: gainsboro;
-  text-align: center;
-  height: 100%;
-}
+
 
 html {
   background:gainsboro;
@@ -70,11 +65,11 @@ a{
   color: white;
   outline: none;
 }
-#content a:link, a:visited{
+ a:link, a:visited{
   color: white;
   text-decoration: none;
 }
-#content a:hover{
+ a:hover{
   color: grey;
   text-decoration: blink;
 }
@@ -138,21 +133,22 @@ body.wider #content{
   position: relative;
 }
 
-#content.blog iframe{
+.blog iframe{
   position: relative;
   margin-right: auto;
   margin-left: auto;
   display: table;
 }
 
-#content .blog{
+ .blog{
   min-height: 100%;
   height: auto !important;
-  width: 80%;
+  width: 100%;
   background: none repeat scroll 0% 0% rgb(37, 37, 37);
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  padding: 20px;
   text-align: left;
 }
 body.thin h1{ font-size: 40px; padding-top: 2px;}
@@ -210,7 +206,7 @@ body.wider #content{
  #footer {
   width: 100%;
   height:90px;
-  background: rgb(37, 37, 37);
+  background: none repeat scroll 0% 0% rgb(37, 37, 37);
   border-top: dashed;
   bottom: 0;
   right: 0;
@@ -296,7 +292,7 @@ h2 {
 #music-chart{
    min-height: 100%;
   height: auto !important;
-  width: 80%;
+  width: 100%;
   background: none repeat scroll 0% 0% rgb(37, 37, 37);
   margin-left: auto;
   margin-right: auto;
@@ -314,6 +310,7 @@ h2 {
     padding: 15px;
     border: medium none;
     border-bottom: outset;
+    border-color: gainsboro;
 }
 
 .individual_audio {
@@ -351,6 +348,11 @@ h2 {
     font-size: 0.001em;
     text-indent: -9999px;
     clear: both;
+}
+
+.navbar{
+  background: none repeat scroll 0% 0% rgb(37, 37, 37);
+  border-bottom: transparent; 
 }
 
 @media (min-width: 768px) {
