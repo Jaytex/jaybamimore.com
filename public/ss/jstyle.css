@@ -39,6 +39,10 @@ p {
   overflow:hidden;
 }
 
+.noindent{
+  padding: 0px;
+}
+
 .jtext1 {
   font-family: 'texfont', 'Ubuntu' ; 
   color:black;
@@ -384,6 +388,13 @@ h2 {
 
 .clearme {
     height: 1px;
+    font-size: 0.001em;
+    text-indent: -9999px;
+    clear: both;
+}
+
+.clearmemore{
+    height: 10px;
     font-size: 0.001em;
     text-indent: -9999px;
     clear: both;
