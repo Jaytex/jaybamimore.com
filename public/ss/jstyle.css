@@ -7,6 +7,12 @@
 @import url("bootstrap.min.css");
 @import url("bootstrap-theme.min.css");
 
+span.TEX {letter-spacing: -0.125em; }
+span.TEX span.E{ position:relative;top:0.5ex;left:-0.0417em;}
+a span.TEX span.E {text-decoration: none; font-family: 'Ubuntu', 'texfont';}
+span.LATEX span.A{ position:relative; top:-0.5ex; left:-0.4em; font-size:85%;}
+span.LATEX span.TEX{ position:relative; left: -0.4em; }
+
 
 .centered{
   max-width: 550px;  
@@ -106,11 +112,44 @@ a{
   text-align: left;
 }
 
-@font-face{
-  font-family: "texfont";
-  src: url('http://www.fontsforweb.com/public/fonts/423/SansationLight.eot');
-  src: local("Sansation Light"), url('http://www.fontsforweb.com/public/fonts/423/SansationLight.woff') format("woff"), url('http://www.fontsforweb.com/public/fonts/423/SansationLight.ttf') format("truetype");
+@font-face {
+  font-family: 'texfont';
+  src: url('../fonts/SansationLight.eot');
+  src: local('SansationLight'), url('../fonts/SansationLight.woff') format('woff'), url('../fonts/SansationLight.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'SansationRegular';
+  src: url('../fonts/SansationLight.eot');
+  src: local('SansationRegular'), url('../fonts/SansationRegular.woff') format('woff'), url('../fonts/SansationRegular.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'CoconLight';
+  src: url('../fonts/CoconLight.eot');
+  src: local('CoconLight'), url('../fonts/CoconLight.woff') format('woff'), url('../fonts/CoconLight.ttf') format('truetype');
+}
+
+.posttext {
+  font-family: 'SansationRegular' !important;
+  color: white;
+}
+
+@font-face {
+  font-family: 'SansumiBold';
+  src: url('../fonts/SansumiBold.eot');
+  src: local('SansumiBold'), url('../fonts/SansumiBold.woff') format('woff'), url('../fonts/SansumiBold.ttf') format('truetype');
+}
+
+.headtext {
+  font-family: 'SansumiBold' !important;
+}
+
+.nametext{
+  font-family: 'texfont' !important;
+}
+
 
 #container{
   width:100%;

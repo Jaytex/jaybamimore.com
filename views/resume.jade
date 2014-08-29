@@ -1,44 +1,38 @@
-extends layoutr
+extends layout
 
 block link
   -var selected = 'Resume';
 
 
 block content
+      
+      h1.nametext
+            span  Jay Bamimore
       .push
-      #music-chart
-
-          h1
-            span  Jay Bamimore 
-          a#Q1-1-1
-          h3.likesectionHead
-            a#x1-1000
-            span.underline
-              span.LinLibertineT-tlf-sc-t-1 Skills
-          dl.list1
-            dt.list
-            dd.list
-              //
-                l. 50
-              p.noindent
-                ul.itemize1
-                  li.itemize
-                    | Languages: C, C++, Java, MATLAB, Python, SQL, WLP4, and Visal Basic (familiar with C#, Scheme)
-                  li.itemize
-                    | Operating Systems: Microsoft Windows(XP, Vista, 7, and 8), Linux(Ubuntu, Fedora, Shell), Mac OS X
-                  li.itemize
-                    | Web Development: HTML, CSS, JavaScript, jQuery, Jade, Node.js, Express, Bootstrap
-                  li.itemize
-                    | Tools:
-                    span.LATEX
-                      | L
-                      span.A A
-                      span.TEX
-                        | T
-                        span.E E
-                        | X
-                    | , Git, Vim, Visual Studio, Eclipse, Code Blocks, Sublime Text 3, bash, puTTy, gedit
-            .clearme
+      .blog
+        #individualPost.individual_blog
            
-            .push
-      .push
+            h1 Skills
+            .clearme
+            ul
+              li.posttext
+                | Languages: C, C++, Java, MATLAB, Python, SQL, WLP4, and Visal Basic (familiar with C#, Scheme)
+              .clearme
+              li.posttext
+                | Operating Systems: Microsoft Windows(XP, Vista, 7, and 8), Linux(Ubuntu, Fedora, Shell), Mac OS X
+              .clearme
+              li.posttext
+                | Web Development: HTML, CSS, JavaScript, jQuery, Jade, Node.js, Express, Bootstrap
+              .clearme
+              li.posttext
+                | Tools:
+                span.LATEX
+                  | L
+                  span.A A
+                  span.TEX
+                    | T
+                    span.E E
+                    | X
+                | , Git, Vim, Visual Studio, Eclipse, Code Blocks, Sublime Text 3, bash, puTTy, gedit
+        
+            

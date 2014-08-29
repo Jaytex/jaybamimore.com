@@ -35,9 +35,9 @@ html
             each val, key in menu
               li
                 if selected === key
-                    a.selected(href=val, title=key)= key
+                    a.selected.headtext(href=val, title=key)= key
                 else
-                    a(href=val, title=key)= key
+                    a.headtext(href=val, title=key)= key
         // /.nav-collapse
 
 
@@ -49,7 +49,7 @@ html
 
 
     #footer
-      p
+      p.posttext
         | &copy 2014
         a(href='/')  Jay Bamimore 
 
