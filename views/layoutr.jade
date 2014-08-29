@@ -4,7 +4,7 @@ html
     title #{title} | Jay
     meta(charset='UTF-8')
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono\' rel=\'stylesheet\' type=\'text/css')
+    link(href="http://fonts.googleapis.com/css?family=Ubuntu", rel="stylesheet", type="text/css")
     link(rel='shortcut icon', href='/img/favicon.ico')
     link(rel='stylesheet', type='text/css', href='ss/myRes.css')
 
@@ -16,8 +16,7 @@ html
      
    
     // Fixed navbar
-    .navbar.navbar-centered.navbar-inverse.navbar-fixed-top(role="navigation")
-      .push_min     
+    .navbar.navbar-centered.navbar-inverse.navbar-fixed-top(role="navigation")    
       .container
         .navbar-header
            button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
@@ -35,7 +34,7 @@ html
               a(href="projects")  Projects 
             li
               a(href="music")  Music 
-            li
+            li.active
               a(href="resume")  Resume 
             li
               a(href="about")  About

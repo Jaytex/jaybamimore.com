@@ -1,6 +1,10 @@
 extends layout
 
+block link
+  -var selected = 'Music';
+
 block content
+      
       .push
       #music-chart
         
@@ -54,6 +58,8 @@ block content
 
           p  For those crazy days...
           .clearme
+        
+
         include disqus.html
         
        

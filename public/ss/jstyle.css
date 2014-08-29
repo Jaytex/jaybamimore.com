@@ -353,7 +353,43 @@ h2 {
 .navbar{
   background: none repeat scroll 0% 0% rgb(37, 37, 37);
   border-bottom: transparent; 
+  font-family: 'texfont';
+
 }
+
+.navbar ul li a.selected {
+  color: #00CCFF;
+}
+
+.navbar ul li a:hover {
+  color: #00CCFF;
+}
+.navbar ul li a:hover:before {
+  width: 100%;
+}
+
+.navbar ul li a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #00CCFF;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+
+.navbar ul li.last > a:after,
+.navbar ul li:last-child > a:after {
+  display: none;
+}
+
+
 
 @media (min-width: 768px) {
     .navbar-centered .navbar-nav {
@@ -368,6 +404,7 @@ h2 {
     }
     .navbar-centered .nav > li > a {
         display: inline-block;
+        color: white;
     }
 }
 
