@@ -8,49 +8,44 @@ html
     title #{title} | Jay
     meta(charset='UTF-8')
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(href="http://fonts.googleapis.com/css?family=Ubuntu", rel="stylesheet", type="text/css")
     link(rel='shortcut icon', href='/img/favicon.ico')
-    link(rel='stylesheet', type='text/css', href='ss/jstyle.css')
-
+    link(rel='stylesheet', type='text/css', href='ss/style.css')  
     script(type='text/javascript', src='/js/jquery.js')
+    script(type='text/javascript', src='/js/scroll.js')
     script(type='text/javascript', src='/js/bootstrap.js')
-  
-
-   
+    //include stratus.html  
+    link(rel='stylesheet', type='text/css', href='ss/stratus.css')
 
   body
-     
-   
-    // Fixed navbar
-    .navbar.navbar-centered.navbar-inverse.navbar-fixed-top(role="navigation")     
-      .container
-        .navbar-header
-           button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-        .navbar-collapse.collapse
-          ul.nav.navbar-nav
-            each val, key in menu
-              li
-                if selected === key
-                    a.selected.headtext(href=val, title=key)= key
-                else
-                    a.headtext(href=val, title=key)= key
-        // /.nav-collapse
+    if selected != 'Home'
+      block navbar
+          // Fixed navbar
+          .navbar.navbar-centered.navbar-inverse.navbar-fixed-top(role="navigation")     
+            .container
+              .navbar-header
+                 button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
+                  span.sr-only Toggle navigation
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+              .navbar-collapse.collapse
+                ul.nav.navbar-nav
+                  each val, key in menu
+                    li
+                      if selected === key
+                          a.selected.headtext(href=val, title=key)= key
+                      else
+                          a.headtext(href=val, title=key)= key
+              // /.nav-collapse
 
-
-    .push
-   
+    .push  
     .container
       block content
-      .push
+    .push  
 
 
-    #footer
-      p.posttext
-        | &copy 2014
-        a(href='/')  Jay Bamimore 
-
- 
+    block footer
+      #footer
+        p.posttext
+          | &copy 2014
+          a(href='/')  Jay Bamimore 

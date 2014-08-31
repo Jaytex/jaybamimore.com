@@ -1,0 +1,387 @@
+/* 
+   Author     : Jay Bamimore
+   style.css  : Cross-platform css for all pages
+   Sections   : Imports, Nav, Text, Content, Footer, Misc, Latex, Fonts
+*/
+
+
+/* Imports */
+@import url("bootstrap.min.css");
+@import url("bootstrap-theme.min.css");
+
+
+/* Navigation rules */
+
+.navbar{
+  background: none repeat scroll 0% 0% rgb(37, 37, 37);
+  border-bottom: transparent; 
+  font-family: 'texfont';
+
+}
+
+.navbar ul li a.selected {
+  color: #00CCFF;
+}
+
+.navbar ul li a:hover {
+  color: #00CCFF;
+}
+.navbar ul li a:hover:before {
+  width: 100%;
+}
+
+.navbar ul li a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #00CCFF;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+
+.navbar ul li.last > a:after,
+.navbar ul li:last-child > a:after {
+  display: none;
+}
+
+@media (min-width: 768px) {
+    .navbar-centered .navbar-nav {
+        float: none;
+        text-align: center;
+    }
+    .navbar-centered .navbar-nav > li {
+        float: none;
+    }
+    .navbar-centered .nav > li {
+        display: inline;
+    }
+    .navbar-centered .nav > li > a {
+        display: inline-block;
+        color: white;
+    }
+}
+
+
+/* Text Rules */
+
+h1 {
+  text-align:center;
+  color: black;
+  font-size: 72px;
+  font-family:'Ubuntu';
+  padding-top: 10px;
+}
+
+h2 {
+  color: black;
+  font-size: 18px;
+  font-family: 'texfont';
+  float: left;
+  text-decoration: none;
+}
+
+#footer p {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  padding-top: 20px;
+}
+
+#footer a{
+  text-decoration: none;
+  color: white;
+}
+
+#footer a:hover{
+  color: grey;
+  text-decoration: blink;
+  }
+
+p {
+	color:white;
+	font-size: 16px;
+	font-family:'Ubuntu Light';
+	padding-top: 0.8cm;
+  	width:100%;
+  	overflow:hidden;
+}
+
+a {
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+ a:link, a:visited{
+  color: white;
+  text-decoration: none;
+}
+ a:hover{
+  color: grey;
+  text-decoration: blink;
+}
+
+#music-chart a {
+  background-color:transparent;
+  color: white;
+  outline: none;
+  text-decoration: none;
+  float: none;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 1cm;
+  padding-top: 1cm;
+  font-family: 'texfont', 'Ubuntu';
+  text-align: left;
+}
+
+#music-chart ul a{
+  text-decoration: none;
+  text-align: left;
+  display: block;
+  color: black;
+  border: dashed;
+  border-color: ghostwhite;
+  border-radius: 5px;
+}
+
+#individualPost h1 {
+    font-weight: 200;
+    font-style: bold;
+    font-size: 28px;
+    font-family: 'texfont', 'Ubuntu';
+    margin: 0px 0px 20px;
+    float: left;
+    width: 80%;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+
+#individualPost h1 a{
+  color: white;
+}
+
+#individualPost p{
+  text-align: left;
+}
+
+
+.main ul li a {
+  background-color:transparent;
+  display: inline-block;
+  outline: none;
+}
+/* Content Rules */
+
+
+body {
+	background: gainsboro;
+	margin: 0 0 100px;
+}
+
+html {
+  background:gainsboro;
+  position: relative;
+  min-height: 100%;
+}
+
+.main ul a {
+  line-height: 80px;
+  padding-right: 32px;
+  padding-left: 32px;
+  display: block;
+  text-decoration: none;
+  font-size: 21px;
+  color: black;
+}
+
+.main ul {
+  list-style-type: none;
+  background-position: right;
+  line-height: 80px;
+  padding-right: 32px;
+  padding-left: 32px;
+  display: block;
+  text-decoration: none;
+  font-size: 21px;
+  color: black;
+  width: 800px;
+  margin: auto;  
+ 
+}
+
+@media (max-width: 1000px) {
+  .main ul li{
+    float: none;
+  }
+}
+
+.main li {float: left; margin: auto;}
+
+#music-chart{
+  min-height: 100%;
+  height: auto !important;
+  width: 100%;
+  background: none repeat scroll 0% 0% rgb(37, 37, 37);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 20px;
+  text-align: left;
+}
+
+
+
+
+#individualPost {
+    background: none repeat scroll 0% 0% rgb(37, 37, 37);
+    margin: 0px 10px 10px 0px;
+    padding: 15px;
+    border: medium none;
+    border-bottom: outset;
+    border-color: gainsboro;
+}
+
+.individual_audio {
+    border-top: 14px solid rgb(115, 165, 56);
+}
+
+.individual_blog {
+  border-top: 14px solid #4275ca
+}
+
+
+#music-chart ul{list-style: none;}
+
+#music-chart li{
+  text-align: left;
+}
+
+.blog iframe{
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  display: table;
+}
+
+ .blog{
+  min-height: 100%;
+  height: auto !important;
+  width: 100%;
+  background: none repeat scroll 0% 0% rgb(37, 37, 37);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 20px;
+  text-align: left;
+}
+
+.hidden{display: none;}
+
+.clearme {
+    height: 1px;
+    font-size: 0.001em;
+    text-indent: -9999px;
+    clear: both;
+}
+
+.clearmemore{
+    height: 10px;
+    font-size: 0.001em;
+    text-indent: -9999px;
+    clear: both;
+}
+
+.centered{
+  max-width: 550px;  
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.push {height:110px;}
+.push_min{height:40px;}
+.push_min2{width: 20px;}
+
+
+/* Footer Rules */
+
+#footer {
+  width: 100%;
+  height:90px;
+  background: none repeat scroll 0% 0% rgb(37, 37, 37);
+  border-top: dashed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;  
+  z-index: 10;
+}
+
+
+
+/* Misc Rules */
+#stratus  {
+  margin-bottom: 90px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 11px;
+  font-family: 'texfont','Ubuntu','Arial';
+  border-color: transparent;
+}
+
+/* Latex typeset */
+span.TEX {letter-spacing: -0.125em; }
+span.TEX span.E{ position:relative;top:0.5ex;left:-0.0417em;}
+a span.TEX span.E {text-decoration: none; font-family: 'Ubuntu', 'texfont';}
+span.LATEX span.A{ position:relative; top:-0.5ex; left:-0.4em; font-size:85%;}
+span.LATEX span.TEX{ position:relative; left: -0.4em; }
+
+
+/* Fonts */
+@font-face {
+  font-family: 'texfont';
+  src: url('../fonts/SansationLight.eot');
+  src: local('SansationLight'), url('../fonts/SansationLight.woff') format('woff'), url('../fonts/SansationLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SansationRegular';
+  src: url('../fonts/SansationLight.eot');
+  src: local('SansationRegular'), url('../fonts/SansationRegular.woff') format('woff'), url('../fonts/SansationRegular.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'CoconLight';
+  src: url('../fonts/CoconLight.eot');
+  src: local('CoconLight'), url('../fonts/CoconLight.woff') format('woff'), url('../fonts/CoconLight.ttf') format('truetype');
+}
+
+.posttext {
+  font-family: 'SansationRegular' !important;
+  color: white;
+}
+
+@font-face {
+  font-family: 'SansumiBold';
+  src: url('../fonts/SansumiBold.eot');
+  src: local('SansumiBold'), url('../fonts/SansumiBold.woff') format('woff'), url('../fonts/SansumiBold.ttf') format('truetype');
+}
+
+.headtext {
+  font-family: 'SansumiBold' !important;
+}
+
+.nametext{
+  font-family: 'texfont' !important;
+}

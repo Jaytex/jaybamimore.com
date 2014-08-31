@@ -1,0 +1,21 @@
+#stratus{position:fixed;bottom:0;left:0;overflow:hidden;z-index:10000;background:none repeat scroll 0% 0% rgb(37, 37, 37);}
+#stratus,#stratus iframe{height:32px;width:100%}
+#stratus iframe{visibility:hidden}
+#stratus.open,#stratus.open iframe{height:199px !important}
+
+
+#stratus{background: none repeat scroll 0% 0% rgb(37, 37, 37);}
+#stratus #drawer,#stratus #player{background: none repeat scroll 0% 0% rgb(37, 37, 37);border-color:#555}
+#stratus #drawer #artwork{-webkit-box-shadow:inset -5px 0 5px -5px rgba(0,0,0,0.15);-moz-box-shadow:inset -5px 0 5px -5px rgba(0,0,0,0.15);box-shadow:inset -5px 0 5px -5px rgba(0,0,0,0.15)}
+#stratus #drawer ul#tracks li{background: none repeat scroll 0% 0% rgb(37, 37, 37);}
+#stratus #drawer ul#tracks li:nth-child(2n){background: none repeat scroll 0% 0% rgb(37, 37, 37);}
+#stratus #drawer ul#tracks li:hover{background: none repeat scroll 0% 0% rgb(37, 37, 37);}
+#stratus #drawer ul#tracks li.current{background: none repeat scroll 0% 0% rgb(37, 37, 37);}
+#stratus #player .prev,#stratus #player .next,#stratus #player .play,#stratus #player .pause,#stratus #player ul#stats li span,#stratus #player ul#buttons li > *,#stratus #player .close,#stratus #player #share{background-image:url("http://www.stratus.sc/themes/dark/sprites.png")}
+#stratus #player a{color:#898989}
+#stratus #player #time{background:#000;}
+#stratus #player #time:hover{background:#555}
+#stratus #player .track,#stratus #player #share,#stratus #player #comment{background: none repeat scroll 0% 0% rgb(37, 37, 37);border-color:#555}
+#stratus #player ul#stats li,#stratus #player ul#buttons li{border-color:#555}
+#stratus #player #share ul#social a{background:url("http://www.stratus.sc/images/social.png")}
+#stratus #player #share #embed input{background: none repeat scroll 0% 0% rgb(37, 37, 37);}
