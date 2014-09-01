@@ -231,6 +231,10 @@ html {
   .home .push{
     height: 10px;
   }
+
+  .home h1{
+    display: none;
+  }
 }
 
 .main li {float: left; margin: auto;}
