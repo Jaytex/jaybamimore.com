@@ -38,11 +38,16 @@ html
                           a.headtext(href=val, title=key)= key
               // /.nav-collapse
 
-    .push  
-    .container
-      block content
-    .push  
-
+    if selected === 'Home'     
+      .push  
+      .container
+        block content
+          
+    else
+      .push  
+      .container
+        block content
+      .push  
 
     block footer
       #footer

@@ -227,6 +227,10 @@ html {
     width: 200px;
     margin-left: 10px;
   }
+
+  .home .push{
+    height: 10px;
+  }
 }
 
 .main li {float: left; margin: auto;}
