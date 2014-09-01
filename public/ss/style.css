@@ -218,9 +218,14 @@ html {
  
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 780px) {
   .main ul li{
     float: none;
+
+  }
+  .main ul {
+    width: 200px;
+    margin-left: 10px;
   }
 }
 
