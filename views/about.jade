@@ -1,7 +1,27 @@
 extends layout
 
 block link
-  -var selected = 'About';
-
+	-var selected = 'About';
 
 block content
+
+	.push
+
+	.centered
+		
+		.img-div.centered
+			img(src='http://placekitten.com/g/400/200')
+		p.abouttext
+			| Jay Bamimore -  Software Developer, Student, Music Junkie, Project maniac, etc...
+		
+		.push_min
+	
+		p.abouttext
+			| Hello World! As the sitename says, I am 
+			a.abouttext.heavy(href='home') Jay Bamimore. 
+			| This website is a place 
+			| where I would like to share some stuff such as  
+			a.abouttext(href='blog')  Stories, 
+			a.abouttext(href='music')  Music,  
+			a.abouttext(href='projects')  Project and 
+			| possibly other stuff!

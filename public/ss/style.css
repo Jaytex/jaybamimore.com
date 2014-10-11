@@ -16,6 +16,7 @@
   background: none repeat scroll 0% 0% rgb(37, 37, 37);
   border-bottom: transparent; 
   font-family: 'texfont';
+  font-style: none;
 
 }
 
@@ -122,6 +123,7 @@ a {
  a:link, a:visited{
   color: white;
   text-decoration: none;
+  font-style: bold;
 }
  a:hover{
   color: grey;
@@ -321,6 +323,20 @@ html {
   margin-right: auto;
 }
 
+div.img-div{
+    height:200px;
+    width:200px;
+    text-align: center;
+    overflow:hidden;
+    border-radius:50%;
+}
+
+.img-div img{
+    -webkit-transform:translate(-50%);
+    -moz-transform:translate(-50%);
+    margin-left:100px;
+}
+
 .push {height:110px;}
 .push_min{height:40px;}
 .push_min2{width: 20px;}
@@ -384,6 +400,16 @@ span.LATEX span.TEX{ position:relative; left: -0.4em; }
   font-family: 'SansationRegular' !important;
   color: white;
 }
+a.abouttext, p.abouttext{
+  font-family: 'texfont' !important;
+  color: rgb(37, 37, 37);
+}
+
+.heavy{
+  text-decoration: bold;
+  font-size: 20px;
+}
+
 
 @font-face {
   font-family: 'SansumiBold';
