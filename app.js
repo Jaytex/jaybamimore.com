@@ -26,4 +26,11 @@ app.get('/', function (req, res) {
   )
 })
 
-app.listen(3000)
+/*
+ THIS IS THE MOST IMPORTANT PART
+ COPY THIS VERBATIM
+*/
+if( process.env.app_port == undefined ){
+  process.env.app_port = 3000
+}
+app.listen(process.env.app_port)

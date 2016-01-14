@@ -1,0 +1,12 @@
+{
+  "out_file": "pm2.stdout.log",
+  "script": "app.js",
+  "exec_interpreter": "node",
+  "exec_mode": "fork",
+  "args": [],
+  "merge_logs": true,
+  "error_file": "pm2.stderr.log",
+  "cwd": "/home/jay/jaybamimore.com/",
+  "name": "jaybamimore.com"
+}
+
